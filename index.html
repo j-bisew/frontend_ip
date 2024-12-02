@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="js" href="script.js">
-    <title>Pokemony</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokeMan</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:,">
 </head>
 <body>
-    <header>
-        <h1>Pokemony</h1>
-    </header>
-    <nav>
-        <div class="search-bar">
-            <input type="search" placeholder="Wyszukaj pokemona">
-            <button>Szukaj</button>
-        </div>
-    <div class="left-bar">
-        <script type="module">
-            import { fetch20pokemons } from './app.js';
-        
-            document.addEventListener("DOMContentLoaded", fetch20pokemons);
-          </script>
+  <header>
+    <h1>PokeMan</h1>
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search Pokémon...">
     </div>
+  </header>
+  <main>
+    <aside class="pokemon-list">
+      <div id="loading-list" class="loading hidden"></div>
+    </aside>
+    <section class="pokemon-details">
+      <div id="loading-details" class="loading hidden"></div>
+      <div id="pokemon-info"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
 </body>
 </html>

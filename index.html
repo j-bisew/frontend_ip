@@ -8,7 +8,7 @@
   <link rel="icon" href="data:,">
 </head>
 <body>
-  <header>
+  <!-- <header>
     <h1>PokeMan</h1>
     <div class="search-bar">
       <input type="text" id="search" placeholder="Search Pokémon...">
@@ -22,7 +22,17 @@
       <div id="loading-details" class="loading hidden"></div>
       <div id="pokemon-info"></div>
     </section>
-  </main>
-  <script src="app.js"></script>
+  </main> -->
+  <!-- Kontener aplikacji React -->
+  <div id="app"></div>
+
+  <!-- CDN React i ReactDOM -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+  
+  <!-- Skrypt aplikacji React -->
+  <script type="text/babel" src="app.js"></script>
+
 </body>
 </html>
